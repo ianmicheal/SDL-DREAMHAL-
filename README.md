@@ -32,8 +32,6 @@ Using SDL_FULLSCREEN flag only 2^n resolution are allowed, but if you do not use
 - SDL_DC_DIRECT_VIDEO
 - ----------------------------
 	Use Direct buffer video driver. Maybe faster than DMA driver if you do not use double buffer.
-	
-	
 	SDL_DC_SetWindow(int width, int height)
 	Only for textured video driver and must be called after SDL_SetVideoMode, this function allow setting the visible area (hardware scaled). If you open a 512x256 texture resolution, only smaller virtual resolution is allowed.
 	-------------------------------------------------------------------------------------------------
@@ -50,7 +48,7 @@ SDL_DC_Default60Hz(SDL_bool value)
 --------------------------------------
 True for 60Hz default display (only for PAL Dreamcasts).
 
-# SDL_DC_MapKey(int joy, SDL_DC_button button, SDLKey key)
+* SDL_DC_MapKey(int joy, SDL_DC_button button, SDLKey key)
 
 Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystick port (0,1,2 or 3). The following table shows valid values for second parameter and default values for third parameter.
 
