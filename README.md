@@ -1,10 +1,22 @@
 # SDL-DREAMHAL Version 1.0 based on SDL1.2.13
 * DREAMCAST hardware +opengl SDL FAST BLIT SPEED CUSTOM
-Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer. 
+*New features
+ UPGRADED blitspeed using moops dreamhal sh4 asm memcpy and memset bult in.
+  Now using GLDC  https://gitlab.com/simulant/GLdc
+	OpenGL (Open Graphics Library) is a standard specification defining a cross-language cross-platform API for writing applications that produce 2D and 3D computer graphics. The    interface consists of over 250 different function calls which can be used to draw complex three-dimensional scenes from simple primitives.	
+	Kazade's Dreamcast OpenGL is a more compatible OpenGL (v1.2) library GLDC:	
+	Full KallistiOS and SDL integration.
+	Texture color and size conversions.
+	Two texture internal color mode supported: RGB5551 and RGB4444.
+
+
 Credit Chui for doing all this work so i could upgrade it and improve it for the new GLDC and Dreamhal math routines and functions 
+
+
 # Old version
 http://chui.dcemu.co.uk/sdl.html
-  UPGRADED blitspeed using moops dreamhal sh4 asm memcpy and memset bult in.
+ 
 	BASED on Chui's SDL port for Dreamcast is a SDL (v1.2.9) driver and it is based on Bero's driver, but it has new features as addons:	
 	Fast DMA video driver.
 	Textured video driver for virtual resolutions.
@@ -26,8 +38,9 @@ http://chui.dcemu.co.uk/sdl.html
 	- VIDEO
  Before SDL_Init call, you can choose SDL video driver for Dreamcast. The following values are valid.
 
-- SDL_DC_DMA_VIDEO (default)
-	Use DMA video drive. It is the fastest video driver using double buffer since every graphic access uses RAM and SDL_Flip function sends data to VRAM using DMA.
+* SDL_DC_DMA_VIDEO (default)
+	Use DMA video drive. It is the fastest video driver using double buffer 
+	since every graphic access uses RAM and SDL_Flip function sends data to VRAM using DMA.
 ------------------------------------------------------------------------------------------------------
 - SDL_DC_TEXTURED_VIDEO
 	Use Textured video driver. If you want to use a virtual resolution (no 640x480, 320x240, ... ), you can use this driver for scaling using hardware texture. PVR textures is always 2^n (128x128, 256x128, 512x256, ... ) and these resolutions are real SDL_Surface resolutions.
