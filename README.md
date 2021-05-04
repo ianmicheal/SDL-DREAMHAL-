@@ -2,7 +2,6 @@
 * DREAMCAST hardware +opengl SDL FAST BLIT SPEED CUSTOM
 Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer. 
 *New features
-------------------------------------------------------------------------------
  UPGRADED blitspeed using moops dreamhal sh4 asm memcpy and memset bult in.
   Now using GLDC  https://gitlab.com/simulant/GLdc
 	OpenGL (Open Graphics Library) is a standard specification defining a cross-language cross-platform API for writing applications that produce 2D and 3D computer graphics. The    interface consists of over 250 different function calls which can be used to draw complex three-dimensional scenes from simple primitives.	
@@ -33,18 +32,20 @@ Using SDL_FULLSCREEN flag only 2^n resolution are allowed, but if you do not use
 - ----------------------------
 	Use Direct buffer video driver. Maybe faster than DMA driver if you do not use double buffer.
 	SDL_DC_SetWindow(int width, int height)
-	Only for textured video driver and must be called after SDL_SetVideoMode, this function allow setting the visible area (hardware scaled). If you open a 512x256 texture resolution, only smaller virtual resolution is allowed.
+	Only for textured video driver and must be called after SDL_SetVideoMode,
+	this function allow setting the visible area (hardware scaled). If you open a 512x256 texture resolution, 
+	only smaller virtual resolution is allowed.
 	-------------------------------------------------------------------------------------------------
 	
-SDL_DC_VerticalWait(SDL_bool value)
+* SDL_DC_VerticalWait(SDL_bool value)
 -------------------------------------------------
 Enable/disable wait for vertical retrace before blitting to PVR hardware.		
 	
-SDL_DC_ShowAskHz(SDL_bool value)
+* SDL_DC_ShowAskHz(SDL_bool value)
 ------------------------------------
 Enable/disable ask for 50/60Hz (only for PAL Dreamcasts) video.		
 	
-SDL_DC_Default60Hz(SDL_bool value)
+* SDL_DC_Default60Hz(SDL_bool value)
 --------------------------------------
 True for 60Hz default display (only for PAL Dreamcasts).
 
