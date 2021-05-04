@@ -1,4 +1,5 @@
 # SDL-DREAMHAL Version 1.0 based on SDL1.2.13
+------------------------------------------------------------------------------------------------------------------
 DREAMCAST hardware +opengl SDL FAST BLIT SPEED CUSTOM
 Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
 Credit Chui for doing all this work so i could upgrade it and improve it for the new GLDC and Dreamhal math routines and functions 
@@ -16,6 +17,7 @@ http://chui.dcemu.co.uk/sdl.html
 	Mouse emulation using analog pad.
 	Mapped keys as pad buttons.
 	Correct timer driver.
+	-------------------------------------------------------------------------------------------------------
  Now using GLDC  https://gitlab.com/simulant/GLdc
 	OpenGL (Open Graphics Library) is a standard specification defining a cross-language cross-platform API for writing applications that produce 2D and 3D computer graphics. The    interface consists of over 250 different function calls which can be used to draw complex three-dimensional scenes from simple primitives.	
 	Kazade's Dreamcast OpenGL is a more compatible OpenGL (v1.2) library GLDC:	
