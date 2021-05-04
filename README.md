@@ -18,3 +18,21 @@ Simple DirectMedia Layer is a cross-platform multimedia library designed to prov
 	Texture color and size conversions.
 	Two texture internal color mode supported: RGB5551 and RGB4444.
 	Fast primitive list render.
+	
+	----------------------------------------------------------------------------------
+	- VIDEO
+	- Before SDL_Init call, you can choose SDL video driver for Dreamcast. The following values are valid.
+
+- SDL_DC_DMA_VIDEO (default)
+	Use DMA video drive. It is the fastest video driver using double buffer since every graphic access uses RAM and SDL_Flip function sends data to VRAM using DMA.
+
+- SDL_DC_TEXTURED_VIDEO
+	Use Textured video driver. If you want to use a virtual resolution (no 640x480, 320x240, ... ), you can use this driver for scaling using hardware texture. PVR textures is always 2^n (128x128, 256x128, 512x256, ... ) and these resolutions are real SDL_Surface resolutions.
+Using SDL_FULLSCREEN flag only 2^n resolution are allowed, but if you do not use this flag it will be automatically fit to SDL_SetVideoMode resolution. See SDL_DC_SetWindow for manual fit.
+
+- SDL_DC_DIRECT_VIDEO
+	Use Direct buffer video driver. Maybe faster than DMA driver if you do not use double buffer.
+	
+	
+	SDL_DC_SetWindow(int width, int height)
+	Only for textured video driver and must be called after SDL_SetVideoMode, this function allow setting the visible area (hardware scaled). If you open a 512x256 texture resolution, only smaller virtual resolution is allowed.
