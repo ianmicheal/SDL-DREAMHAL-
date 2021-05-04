@@ -60,8 +60,8 @@ Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystic
 - Value	          Port 0	 Port 1 Port 2 Port 3
 - 
 
-``SDL_DC_START	SDLK_RETURN	SDLK_z	SDLK_v	SDLK_m
-SDL_DC_A	SDLK_LCTRL	SDLK_e	SDLK_y	SDLK_o
+- SDL_DC_START	SDLK_RETURN	SDLK_z	SDLK_v	SDLK_m
+- SDL_DC_A	SDLK_LCTRL	SDLK_e	SDLK_y	SDLK_o
 SDL_DC_B	SDLK_LALT	SDLK_q	SDLK_r	SDLK_u
 SDL_DC_X	SDLK_SPACE	SDLK_x	SDLK_b	SDLK_COMMA
 SDL_DC_Y	SDLK_LSHIFT	SDLK_c	SDLK_n	SDLK_PERIOD
