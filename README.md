@@ -1,5 +1,5 @@
 # SDL-DREAMHAL Version 1.0 based on SDL1.2.13
-` DREAMCAST hardware +opengl SDL FAST BLIT SPEED CUSTOM
+* DREAMCAST hardware +opengl SDL FAST BLIT SPEED CUSTOM
 Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
 Credit Chui for doing all this work so i could upgrade it and improve it for the new GLDC and Dreamhal math routines and functions 
 # Old version
