@@ -54,3 +54,6 @@ True for 60Hz default display (only for PAL Dreamcasts).
 
 Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystick port (0,1,2 or 3). The following table shows valid values for second parameter and default values for third parameter.
 
+
+Opengl Dreamhal+GLDC running on Dreamcast hardware
+<div style="width:100%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/55982r" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
