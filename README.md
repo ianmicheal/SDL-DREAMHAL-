@@ -59,7 +59,7 @@ True for 60Hz default display (only for PAL Dreamcasts).
 Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystick port (0,1,2 or 3). The following table shows valid values for second parameter and default values for third parameter.
 - Value	          Port 0	 Port 1 Port 2 Port 3
 - 
-
+----------------------------------------------------------
 - SDL_DC_START	SDLK_RETURN	SDLK_z	SDLK_v	SDLK_m
 - SDL_DC_A	SDLK_LCTRL	SDLK_e	SDLK_y	SDLK_o
 SDL_DC_B	SDLK_LALT	SDLK_q	SDLK_r	SDLK_u
@@ -71,4 +71,4 @@ SDL_DC_LEFT	SDLK_LEFT	SDLK_a	SDLK_f	SDLK_j
 SDL_DC_RIGHT	SDLK_RIGHT	SDLK_d	SDLK_h	SDLK_l
 SDL_DC_UP	SDLK_UP	SDLK_w	SDLK_t	SDLK_i
 SDL_DC_DOWN	SDLK_DOWN	SDLK_s	SDLK_g	SDLK_k``
-
+------------------------------------------------------------
