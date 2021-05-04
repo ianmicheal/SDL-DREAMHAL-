@@ -78,5 +78,5 @@ SDL_DC_RIGHT	SDLK_RIGHT	SDLK_d	SDLK_h	SDLK_l
 -------------------------------------------------------
 SDL_DC_UP	SDLK_UP	SDLK_w	SDLK_t	SDLK_i
 ---------------------------------------------------
-SDL_DC_DOWN	SDLK_DOWN	SDLK_s	SDLK_g	SDLK_k
--------------------------------------------------------------
+ -SDL_DC_DOWN	SDLK_DOWN	SDLK_s	SDLK_g	SDLK_k
+
