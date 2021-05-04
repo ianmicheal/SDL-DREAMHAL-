@@ -6,8 +6,6 @@ Credit Chui for doing all this work so i could upgrade it and improve it for the
 Old version
 http://chui.dcemu.co.uk/sdl.html
   UPGRADED blitspeed using moops dreamhal sh4 asm memcpy and memset bult in.
-  --------------------------------------------------------------------------------------------------------
-  
 	BASED on Chui's SDL port for Dreamcast is a SDL (v1.2.9) driver and it is based on Bero's driver, but it has new features as addons:	
 	Fast DMA video driver.
 	Textured video driver for virtual resolutions.
@@ -38,8 +36,22 @@ http://chui.dcemu.co.uk/sdl.html
 Using SDL_FULLSCREEN flag only 2^n resolution are allowed, but if you do not use this flag it will be automatically fit to SDL_SetVideoMode resolution. See SDL_DC_SetWindow for manual fit.
 ----------------------------------------------------------------------------------------------
 - SDL_DC_DIRECT_VIDEO
+- ----------------------------
 	Use Direct buffer video driver. Maybe faster than DMA driver if you do not use double buffer.
 	
 	
 	SDL_DC_SetWindow(int width, int height)
 	Only for textured video driver and must be called after SDL_SetVideoMode, this function allow setting the visible area (hardware scaled). If you open a 512x256 texture resolution, only smaller virtual resolution is allowed.
+	-------------------------------------------------------------------------------------------------
+	
+SDL_DC_VerticalWait(SDL_bool value)
+-------------------------------------------------
+Enable/disable wait for vertical retrace before blitting to PVR hardware.		
+	
+SDL_DC_ShowAskHz(SDL_bool value)
+------------------------------------
+Enable/disable ask for 50/60Hz (only for PAL Dreamcasts) video.		
+	
+SDL_DC_Default60Hz(SDL_bool value)
+--------------------------------------
+True for 60Hz default display (only for PAL Dreamcasts).
