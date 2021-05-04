@@ -57,7 +57,6 @@ True for 60Hz default display (only for PAL Dreamcasts).
 # SDL_DC_MapKey(int joy, SDL_DC_button button, SDLKey key)
 
 Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystick port (0,1,2 or 3). The following table shows valid values for second parameter and default values for third parameter.
--------------------------------------------------------------------
 Value	Port 0	Port 1	Port 2	Port 3
 SDL_DC_START	SDLK_RETURN	SDLK_z	SDLK_v	SDLK_m
 --------------------------------------------------------
