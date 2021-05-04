@@ -56,4 +56,6 @@ Map a Dreamcast button to SDLKey. First parameter is number of Dreamcast joystic
 
 
 Opengl Dreamhal+GLDC running on Dreamcast hardware
-<div style="width:100%;height:0px;position:relative;padding-bottom:66.667%;"><iframe src="https://streamable.com/e/55982r" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+https://streamable.com/55982r
+https://streamable.com/kvk4ez
+https://streamable.com/5k8lsk
